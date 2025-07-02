@@ -4,7 +4,9 @@ pipeline{
         stage('build'){
             steps{
                 echo "implement in git"
-            }
+                echo "hello world"
+
+           }
         }
     }
 }
