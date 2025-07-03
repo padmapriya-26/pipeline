@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('build'){
             steps{
-                echo "implement in git"
+                echo "implement in git and pipeline"
                 echo "hello world"
 
            }
