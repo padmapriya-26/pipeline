@@ -11,7 +11,7 @@ pipeline {
                 label 'headche-label'
             }
             steps{
-                echo "other bulid with master slave"
+                echo "other build with master slave"
                 sh hostname -i
             }
 
