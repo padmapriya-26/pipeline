@@ -1,12 +1,21 @@
-pipeline{
+pipeline {
     agent any
-    stages{
+    stages {
         stage('build'){
-            steps{
-                echo "implement in git and pipeline"
+            steps {
                 echo "hello world"
-
-           }
+            }
         }
+        stage('other build'){
+            agent {
+                label 'headche-label'
+            }
+            steps{
+                echo "other bulid with master slave"
+                sh hostname -i
+            }
+
+        }   
+        
     }
 }
