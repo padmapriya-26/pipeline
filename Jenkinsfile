@@ -1,21 +1,10 @@
 pipeline {
     agent any
-    stages {
-        stage('build'){
-            steps {
-                echo "hello world"
+    stages{
+        stage('hello') {
+            steps{
+                echo "hello from jenkins file"
             }
         }
-        stage('other build'){
-            agent {
-                label 'headche-label'
-            }
-            steps{
-                echo "other build with master slave"
-                sh hostname -i
-            }
-
-        }   
-        
     }
 }
